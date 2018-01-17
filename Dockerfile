@@ -1,3 +1,7 @@
+# Creates a base image containing CentOS and the
+# IBM Installation Manager.  Can be used to install
+# additional products using IIM
+
 FROM centos:7
 
 # IIM should point to the install file
