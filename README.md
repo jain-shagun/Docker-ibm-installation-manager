@@ -15,9 +15,9 @@ docker build --build-arg IIM=agent.installer.linux.gtk.x86_64_1.8.8000.20171130_
 ```
 where:
 
-    * ```agent.install.....zip``` is the name of the file you downloaded
-    * ```ftp_server_and_path`` is the full name and path of your ftp server
-    * ```iim:v188``` is a tag for your image
+* ```agent.install.....zip``` is the name of the file you downloaded
+* ```ftp_server_and_path`` is the full name and path of your ftp server
+* ```iim:v188``` is a tag for your image
 
 ## Useful commands
 List docker images:
