@@ -1,4 +1,4 @@
-#IBM Installation Manager - Docker Build
+# IBM Installation Manager - Docker Build
 
 ## IIM Files
 * [IIM silent install documentation](https://www.ibm.com/support/knowledgecenter/SSDV2W_1.8.5/com.ibm.silentinstall12.doc/topics/t_silent_installIM_IMinst.html)
@@ -6,17 +6,17 @@
 
 ## Build image
 Download the version of IIM you want, ie, ```agent.installer.linux.gtk.x86_64_1.8.8000.20171130_1105.zip```, and place
-it in a directory on your FTP server.
+it in a directory on your HTTP or FTP server.
 
 Copy the Dockerfile to a directory on your Docker server, switch to that
-directory, and run the command to build the image:  
+directory, and run the command to build the image:
 ```
-docker build --build-arg IIM=agent.installer.linux.gtk.x86_64_1.8.8000.20171130_1105.zip --build-arg URL=ftp://ftp_server_and_path -t iim:v188 .
+docker build --build-arg IIM=agent.installer.linux.gtk.x86_64_1.8.8000.20171130_1105.zip --build-arg URL=http://http_server_and_path -t iim:v188 .
 ```
 where:
 
 * ```agent.install.....zip``` is the name of the file you downloaded
-* ```ftp_server_and_path``` is the full name and path of your ftp server
+* ```http_server_and_path``` is the full name and path of your ftp/http server
 * ```iim:v188``` is a tag for your image
 
 ## Useful commands
